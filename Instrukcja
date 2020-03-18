@@ -1,0 +1,19 @@
+Wywołanie "gry w życie":
+
+./gra n dane [wynik] [nazwa]
+
+gdzie:
+n - liczba generacji do zasymulowania
+dane - plik tekstowy z zapisanym początkowym ułożeniem komórek (żywych i martwych)
+wynik - plik tekstowy, do którego zostanie zapisana ostatnia generacja komórek. W razie braku
+	pliku wynik nadpisany zostanie plik dane
+nazwa - nazwa generowanych przez program obrazów. Domyślnie jest to "obrazy/out"
+
+Dodatkowo w folderze dane znajduje się generator plików tekstowych opisujących komórki:
+
+./generator plik [x] [y] [prawd]
+
+gdzie:
+plik - plik do którego mają zostać zapisane dane
+x,y - wymiary wygenerowanej planszy
+prawd - prawdopodobieństwo wygenerowania żywej komórki (min 0, max 1)
